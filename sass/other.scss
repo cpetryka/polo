@@ -1,0 +1,54 @@
+html {
+    font-family: $main-font-family;
+    font-size: $main-font-size;
+}
+
+.separator {
+    height: 2px;
+    width: 100px;
+    background-color: #2250fc;
+    margin: 30px 0;
+}
+
+.small-separator {
+    height: 1px;
+    width: 25px;
+    background: $brightest-bg;
+    margin: 20px auto;
+}
+
+.section-header {
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 1.25rem;
+        color: $light-gray-color;
+    }
+
+    @media(max-width: 767.98px) {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+.section-header-center {
+    @extend .section-header;
+    text-align: center;
+
+    .separator {
+        margin: 30px auto;
+    }
+}
+
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+}

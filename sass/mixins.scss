@@ -1,0 +1,12 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin box-size($width, $height) {
+    @if ($width > 0 and $height > 0) {
+        width: $width;
+        height: $height;
+    }
+}
